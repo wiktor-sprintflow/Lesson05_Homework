@@ -1,4 +1,4 @@
-package magazyn;
+package warehouse;
 
 class Device {
     private String code;
