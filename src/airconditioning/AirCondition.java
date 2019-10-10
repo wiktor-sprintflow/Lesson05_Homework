@@ -1,4 +1,4 @@
-package klimatyzacja;
+package airconditioning;
 
 public class AirCondition {
     public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class AirCondition {
 
         System.out.println();
 
-        Room room2 = new Room(20, 18, true);
+        Room room2 = new Room(18, true);
         System.out.println(room2.decreaseTempAndGetDetails());
         System.out.println(room2.decreaseTempAndGetDetails());
 
