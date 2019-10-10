@@ -23,6 +23,6 @@ class LineSegment {
     }
 
     String getLineSegmentLength(){
-        return ("Długość odcinka między punktami: (" + this.point1.getX() + "," + this.point1.getY() +") oraz (" + this.point2.getX() + "," + this.point2.getY() + ") wynosi: " + length());
+        return ("Długość odcinka między punktami: (" + point1.getX() + "," + point1.getY() +") oraz (" + point2.getX() + "," + point2.getY() + ") wynosi: " + length());
     }
 }
