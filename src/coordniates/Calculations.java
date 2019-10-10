@@ -11,16 +11,16 @@ class Calculations {
         LineSegment lineSegment2 = new LineSegment(point1, point3);
         LineSegment lineSegment3 = new LineSegment(point2, point3);
 
-        boolean areCorrect = (this.lineSegmentLength(lineSegment1) + this.lineSegmentLength(lineSegment2) > this.lineSegmentLength(lineSegment3) &&
-                this.lineSegmentLength(lineSegment1) + this.lineSegmentLength(lineSegment3) > this.lineSegmentLength(lineSegment2) &&
-                this.lineSegmentLength(lineSegment2) + this.lineSegmentLength(lineSegment3) > this.lineSegmentLength(lineSegment1));
+        boolean areCorrect = (lineSegmentLength(lineSegment1) + lineSegmentLength(lineSegment2) > lineSegmentLength(lineSegment3) &&
+                lineSegmentLength(lineSegment1) + lineSegmentLength(lineSegment3) > lineSegmentLength(lineSegment2) &&
+                lineSegmentLength(lineSegment2) + lineSegmentLength(lineSegment3) > lineSegmentLength(lineSegment1));
 
         return areCorrect;
     }
 
     String getLineSegmentLength(LineSegment lineSegment) {
         return ("Długość odcinka między punktami: (" + lineSegment.getPoint1().getX() + "," + lineSegment.getPoint1().getY() + ") oraz (" +
-                lineSegment.getPoint2().getX() + "," + lineSegment.getPoint2().getY() + ") wynosi: " + this.lineSegmentLength(lineSegment));
+                lineSegment.getPoint2().getX() + "," + lineSegment.getPoint2().getY() + ") wynosi: " + lineSegmentLength(lineSegment));
     }
 
     String getTriangleInfo(Point point1, Point point2, Point point3) {
